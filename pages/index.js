@@ -14,7 +14,7 @@ export default function Home() {
     console.log(event.target.value);
   };
   return (
-    <div class="grid grid-cols-2 gap-4">
+    <div className="grid grid-cols-2 gap-4">
       <div>
         <textarea
           className='p-4 w-full h-full border border-solid border-slate-700'

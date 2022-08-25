@@ -34,9 +34,9 @@ export default function Engine() {
                             placeholder="search for images"
                             onChange={handleMessageChange}
                             x-model="q"
-                            class="w-full pl-4 text-sm outline-none focus:outline-none bg-transparent" />
-                        <button onClick={() => search(searchText)} class="outline-none focus:outline-none">
-                            <svg class=" w-5 text-gray-600 h-5 cursor-pointer" fill="none"
+                            className="w-full pl-4 text-sm outline-none focus:outline-none bg-transparent" />
+                        <button onClick={() => search(searchText)} className="outline-none focus:outline-none">
+                            <svg className=" w-5 text-gray-600 h-5 cursor-pointer" fill="none"
                                 stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 stroke="currentColor" viewBox="0 0 24 24">
                                 <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
@@ -45,14 +45,14 @@ export default function Engine() {
                     </div>
                 </div>
             </section >
-            <section class="overflow-hidden text-gray-700 ">
-                <div class="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
-                    <div class="flex flex-wrap -m-1 md:-m-2">
+            <section className="overflow-hidden text-gray-700 ">
+                <div className="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
+                    <div className="flex flex-wrap -m-1 md:-m-2">
                         {
                             images.map(image =>
-                                <div key={image.url} class="flex flex-wrap w-1/3">
-                                    <div class="w-full p-1 md:p-2">
-                                        <img alt={image.url} class="text-white block object-cover object-center w-full h-full rounded-lg"
+                                <div key={image.url} className="flex flex-wrap w-1/3">
+                                    <div className="w-full p-1 md:p-2">
+                                        <img alt={image.url} className="text-white block object-cover object-center w-full h-full rounded-lg"
                                             src={image.url} />
                                     </div>
                                 </div>
