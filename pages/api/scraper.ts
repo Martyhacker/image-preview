@@ -1,4 +1,4 @@
-import type { NextApiRequest, NextApiResponse } from 'next';
+import { NextApiRequest, NextApiResponse } from 'next';
 import type { Readable } from 'node:stream';
 const imageSearch = require('image-search-google');
 const client = new imageSearch('03eee2029b5034fec', 'AIzaSyCY6JvrZabYSC-JtD_dEhIMXH_XdFAnwWs');
