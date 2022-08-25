@@ -29,7 +29,7 @@ export default function Home() {
         {
           images.map((entry) => {
             // return <Image src={entry} height={'50'} width={'50'}/>
-            return <ImageButton url={entry}/>
+            return <ImageButton key={entry} url={entry} />
           })
         }
       </div>
